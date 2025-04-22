@@ -1,0 +1,149 @@
+/* ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .skill-item {
+        width: 22.5%;
+    }
+          .skill {
+              min-height: 0;
+          }
+
+          #home {
+            min-height: 0;
+            margin-top: 200px;
+          }
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    /* #home {
+        flex-direction: column-reverse;
+    }
+
+   */
+
+    .skill-item {
+        width: 30%;
+    }
+
+  
+
+    /* .skill-container {
+                margin-left: -8px;
+                    margin-right: -8px;
+        } */
+
+    /* .language {
+        font-size: 12px;
+    }
+
+    .illustration {
+        padding: 20px 20px 0;
+    }
+
+    .complement {
+        padding: 20px 20px 50px;
+        flex-direction: column;
+    }
+
+    .complement-left,
+    .complement-right {
+        padding: 0;
+    }
+
+    .complement-right ul {
+        margin-left: 16px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    .creation {
+        bottom: 0;
+        left: 20px;
+    }
+
+    .project-description {
+        font-size: 12px;
+    }
+
+    .size-description {
+        font-size: 12px;
+    }
+
+    .complement-right {
+        border-left: none;
+    } */
+
+}
+
+/* Mobile */
+@media screen and (max-width: 739px) {
+    * {
+        --webkit-hightlight-tap-color: transparent;
+    }
+
+    .experience-1 {
+        margin: 10px 0;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        margin-top: 54vh;
+    }
+
+
+
+    .skill-item {
+        width: 47.5%;
+        margin: 4px;
+    }
+
+    .skill-container {
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+
+    .language {
+        font-size: 12px;
+    }
+
+    .illustration {
+        padding: 20px 20px 0;
+    }
+
+    .complement {
+        padding: 20px 20px 50px;
+        flex-direction: column;
+    }
+
+    .complement-left,
+    .complement-right {
+        padding: 0;
+    }
+
+    .complement-right ul {
+        margin-left: 16px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    .creation {
+        bottom: 0;
+        left: 20px;
+    }
+
+    .project-description {
+        font-size: 12px;
+    }
+
+    .size-description {
+        font-size: 12px;
+    }
+
+    .complement-right {
+        border-left: none;
+    }
+}

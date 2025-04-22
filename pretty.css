@@ -1,0 +1,472 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* shared */
+a {
+    /* text-decoration: none; */
+    color: white;
+}
+
+.center-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.radius-item {
+
+    /* border-radius: 10px 10px 0 0;
+    padding: 5px 5px 0;
+    background-image: linear-gradient(to right, rgba(212, 202, 202, 0.347), rgba(255, 255, 255, 0.119)); */
+}
+
+.project-photo {
+    z-index: 10;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 10px 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.322), rgba(255, 255, 255, 0.322));
+    /* box-shadow: 0 0 60px #0083ff; */
+
+}
+
+
+
+.appear-timeline {
+    animation: project-photo;
+    animation-timeline: view();
+}
+
+@keyframes project-photo {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX();
+    }
+}
+
+.creation {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.decorate-left,
+.decorate-top,
+.decorate-right {
+    position: absolute;
+    filter: blur(40px);
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(to right, #00fdff, #00ff66);
+}
+
+.decorate-left {
+    left: 0;
+    bottom: 0;
+}
+
+.decorate-top {
+    width: 50%;
+    top: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.decorate-right {
+    right: 0;
+    bottom: 0;
+}
+
+.text-color {
+    background-image: linear-gradient(to right, #ff00ea, #00fdff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-size-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Xóa */
+body {
+    background-color: #0a1221;
+    color: white;
+}
+
+.maha-container {
+    min-width: 1200px;
+}
+
+.wide {
+    width: 1200px;
+    max-width: 95%;
+    margin: auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.header-link:hover {
+    background-image: linear-gradient(to right, #00fdff, #00ff66);
+    background-clip: text;
+    color: transparent;
+    border: 1px solid rgb(0, 238, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #00fdff, -1px -1px 5px #00ff66;
+}
+
+
+
+#home {
+    display: flex;
+    width: 100%;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container-picture {
+    flex: 1;
+}
+
+.picture {
+    /* background: url('./media/img/caohoangkhanhbang_ky.jpg') center /cover no-repeat; */
+    width: 20rem;
+    height: 20em;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+.introduce {
+    flex: 2;
+}
+
+
+.experience-1 {
+    /* padding: 20px; */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.037), rgba(255, 255, 255, 0.119));
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    border: 1px solid #ffffff63;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.education-complement {
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.037), rgba(255, 255, 255, 0.119));
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    border: 1px solid #ffffff33;
+    flex: 1;
+    margin-top: 10px;
+    height: 60vh;
+    position: relative;
+
+}
+
+#achievement {
+    margin-top: 30px;
+}
+
+.achievement-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 49px;
+    position: relative;
+}
+
+.achievement-time {
+    position: absolute;
+    bottom: -50px;
+}
+
+.night-star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.first-prize {
+    font-size: 4rem;
+    line-height: 71px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.illustration {
+    flex: 1;
+    position: relative;
+    padding: 50px 50px 0;
+    overflow: hidden;
+    z-index: 10;
+    display: flex;
+}
+
+.complement {
+    flex: 1;
+    width: 100%;
+    line-height: 37px;
+    display: flex;
+    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(40px);
+}
+
+.decorate {
+    position: absolute;
+    filter: blur(10px);
+    width: 80px;
+    height: 80px;
+    background-color: red;
+}
+
+
+.complement-left,
+.complement-right {
+    flex: 1;
+    z-index: 5;
+    padding: 50px;
+}
+
+.complement-right {
+    border-left: 1px solid #ffffff29;
+    position: relative;
+}
+
+.complement-right-decoration {
+    position: absolute;
+    width: 30%;
+    height: 39%;
+    right: -58px;
+    bottom: -23px;
+    filter: blur(58px);
+    background-image: linear-gradient(to right, #da00ff, #ff0000);
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #00ffe7, #ff00bf);
+    background-clip: text;
+    color: transparent;
+}
+
+.project-description {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.goto-github {
+    text-decoration: none;
+    background-image: linear-gradient(to right, #00fdff, #00ff66);
+    color: transparent;
+    background-clip: text;
+    --webkit-background-clip: text;
+    font-weight: 200;
+    position: relative;
+}
+
+.goto-github::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-image: linear-gradient(to right, #00fdff, #00ff66);
+    bottom: -3px;
+    left: 0;
+    transition: .3s;
+}
+
+.goto-github:hover:after {
+    width: 100%;
+}
+
+/* .experence-1 {} */
+
+.ultra-job,
+.name-color {
+    background-image: linear-gradient(to right, #00fdff, #00ff66);
+    background-clip: text;
+    color: transparent;
+}
+
+.name-color {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.text-size {
+    font-size: 3rem;
+}
+
+#education {
+    margin-top: 30px;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-columns: 33.3%;
+    grid-auto-rows: 20vh;
+    grid-template-areas:
+        "huit1 huit1 huit2"
+        "huit1 huit1 huit3"
+        "huit1 huit1 huit3";
+    flex: 2;
+}
+
+.huit1 {
+    background: url('./media/img/dh-cong-thuong.jpg') center / cover no-repeat;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.huit2 {
+    background: url('./media/img/HUFI.jpg') center / cover no-repeat;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.huit3 {
+    background: url('./media/img/congHuit2.jpg') center / cover no-repeat;
+    border-radius: 10px;
+}
+
+.text-education {
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #009ce7, #00c0c9);
+    background-clip: text;
+    color: transparent;
+}
+
+.school-year {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.logo-university {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* animation */
+.appear {
+    animation: rightAppear 1.5s ease;
+}
+
+.avartar {
+    animation: avartarAppear 1s linear;
+}
+
+@keyframes rightAppear {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes avartarAppear {
+    from {
+        transform: translateY(100%) scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.skill {
+    min-height: 100vh;
+
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff33;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.037), rgba(255, 255, 255, 0.119));
+    backdrop-filter: blur(25px);
+    width: 18%;
+    margin: 12px;
+    min-height: 20%;
+}
+
+.language {
+    /* margin-left: 10px; */
+}
+
+.language-logo {
+    border-radius: 10px;
+    width: 50px;
+    /* height: 50px; */
+    background-size: contain;
+}
+
+.job-appear {
+    animation-delay: .1s;
+}
+
+.skill-job-apppear {
+    animation-delay: .2s;
+}
