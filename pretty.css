@@ -9,7 +9,6 @@
 
 /* shared */
 a {
-    /* text-decoration: none; */
     color: white;
 }
 
@@ -20,20 +19,47 @@ a {
     flex-direction: column;
 }
 
-.radius-item {
-
-    /* border-radius: 10px 10px 0 0;
-    padding: 5px 5px 0;
-    background-image: linear-gradient(to right, rgba(212, 202, 202, 0.347), rgba(255, 255, 255, 0.119)); */
+.menu-resp {
+    display: none;
 }
+
+.menu {
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    background: linear-gradient(45deg, #b200ff00, #00ffe37d);
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    animation: docla .3s linear;
+
+}
+
+@keyframes docla {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.show {
+    display: flex;
+}
+
+
 
 .project-photo {
     z-index: 10;
     border-radius: 10px 10px 0 0;
     padding: 10px 10px 0;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.322), rgba(255, 255, 255, 0.322));
-    /* box-shadow: 0 0 60px #0083ff; */
-
 }
 
 
@@ -154,7 +180,6 @@ body {
 }
 
 .picture {
-    /* background: url('./media/img/caohoangkhanhbang_ky.jpg') center /cover no-repeat; */
     width: 20rem;
     height: 20em;
     border-radius: 50%;
@@ -238,7 +263,6 @@ body {
     width: 100%;
     line-height: 37px;
     display: flex;
-    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     z-index: 10;
@@ -452,14 +476,10 @@ body {
     min-height: 20%;
 }
 
-.language {
-    /* margin-left: 10px; */
-}
 
 .language-logo {
     border-radius: 10px;
     width: 50px;
-    /* height: 50px; */
     background-size: contain;
 }
 

@@ -3,77 +3,23 @@
     .skill-item {
         width: 22.5%;
     }
-          .skill {
-              min-height: 0;
-          }
 
-          #home {
-            min-height: 0;
-            margin-top: 200px;
-          }
+    .skill {
+        min-height: 0;
+    }
+
+    #home {
+        min-height: 0;
+        margin-top: 200px;
+    }
 }
 
 /* Tablet */
 @media screen and (min-width: 740px) and (max-width: 1023px) {
-    /* #home {
-        flex-direction: column-reverse;
-    }
-
-   */
 
     .skill-item {
         width: 30%;
     }
-
-  
-
-    /* .skill-container {
-                margin-left: -8px;
-                    margin-right: -8px;
-        } */
-
-    /* .language {
-        font-size: 12px;
-    }
-
-    .illustration {
-        padding: 20px 20px 0;
-    }
-
-    .complement {
-        padding: 20px 20px 50px;
-        flex-direction: column;
-    }
-
-    .complement-left,
-    .complement-right {
-        padding: 0;
-    }
-
-    .complement-right ul {
-        margin-left: 16px;
-    }
-
-    .project-title {
-        font-size: 18px;
-    }
-
-    .creation {
-        bottom: 0;
-        left: 20px;
-    }
-
-    .project-description {
-        font-size: 12px;
-    }
-
-    .size-description {
-        font-size: 12px;
-    }
-
-    .complement-right {
-        border-left: none;
-    } */
 
 }
 
@@ -92,7 +38,26 @@
         margin-top: 54vh;
     }
 
+    .header-content-interactive {
+        display: none;
+    }
 
+    .menu-resp {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    
+    .header-link {
+        padding: 6px 30px;
+    }
 
     .skill-item {
         width: 47.5%;
